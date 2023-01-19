@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import nosotros from '../../img/nosotros.jpg'
+---
+
+<Layout title="Nosotros." description="Página de nosotros y lo que hacemos">
+	<main class="contenedor">
+		<h1 class="heading">Nosotros</h1>
+
+		<div class="contenido">
+			<img src={nosotros} alt="imagen sobre nosotros">
+
+			<div>
+				<p>Sed semper est sagittis laoreet feugiat. Nunc egestas massa enim, vel tincidunt enim rhoncus sed. Ut erat ipsum, semper nec sagittis vel, viverra sed dui. Cras accumsan lacinia lectus, non sollicitudin orci aliquet et. Curabitur in leo enim. Proin in sem facilisis quam gravida feugiat dapibus et felis. Sed in justo tempor, efficitur elit et, scelerisque turpis.</p>
+
+				<p>uspendisse id nunc mattis enim scelerisque tempus. Quisque euismod massa et eros elementum commodo. Mauris quis dictum nunc. Maecenas at metus id neque dignissim facilisis in a ligula. Nullam iaculis dignissim convallis.</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.contenido {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+</style>
